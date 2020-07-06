@@ -33,7 +33,7 @@ namespace Xceed.Wpf.AvalonDock
                                                   IntPtr hwndParent,
                                                   IntPtr hMenu,
                                                   IntPtr hInst,
-                                                  [MarshalAs( UnmanagedType.AsAny )] object pvParam );
+                                                  IntPtr pvParam );
     internal const int
           WS_CHILD = 0x40000000,
           WS_VISIBLE = 0x10000000,

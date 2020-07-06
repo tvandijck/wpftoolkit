@@ -70,10 +70,12 @@ using System;
 [assembly: XmlnsDefinition( "http://schemas.xceed.com/wpf/xaml/avalondock", "Xceed.Wpf.AvalonDock.Properties" )]
 [assembly: XmlnsDefinition( "http://schemas.xceed.com/wpf/xaml/avalondock", "Microsoft.Windows.Shell" )]
 
+#if DOTNET_40
 #pragma warning disable 1699
 [assembly: AssemblyDelaySign( false )]
 [assembly: AssemblyKeyFile( @"..\..\sn.snk" )]
 [assembly: AssemblyKeyName( "" )]
 #pragma warning restore 1699
+#endif
 
 
